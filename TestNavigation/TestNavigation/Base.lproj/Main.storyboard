@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23086.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zjh-qs-zIa">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23076"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tortoise-->
+        <scene sceneID="NqG-aa-Vhv">
+            <objects>
+                <navigationController id="zUQ-Vc-Hul" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tortoise" image="tortoise" catalog="system" id="MoC-WK-UFa"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xyj-HA-zg4">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bDJ-HP-5Wt" kind="relationship" relationship="rootViewController" id="b4c-1q-5ai"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Y4-Ut-CNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="-189"/>
+        </scene>
+        <!--Tortoise1-->
+        <scene sceneID="8ze-Ew-bYx">
+            <objects>
+                <viewController storyboardIdentifier="TortoiseViewController" title="Tortoise1" id="bDJ-HP-5Wt" customClass="TortoiseViewController" customModule="TestNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3aw-zI-Ocs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xO-lQ-jDt">
+                                <rect key="frame" x="141.66666666666666" y="405.66666666666669" width="110" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Child"/>
+                                <connections>
+                                    <action selector="showChild" destination="bDJ-HP-5Wt" eventType="touchUpInside" id="X9W-By-wfu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Et3-5h-Uew"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8xO-lQ-jDt" firstAttribute="centerY" secondItem="3aw-zI-Ocs" secondAttribute="centerY" id="cZa-4J-Drk"/>
+                            <constraint firstItem="8xO-lQ-jDt" firstAttribute="centerX" secondItem="3aw-zI-Ocs" secondAttribute="centerX" id="ffj-qC-p8f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TortoiseTitle1" id="VEn-g0-dg6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kvd-hy-hBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="-189"/>
+        </scene>
+        <!--Hare-->
+        <scene sceneID="MCB-Ky-hwF">
+            <objects>
+                <navigationController id="uej-cq-hlc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hare" image="hare" catalog="system" id="yRR-GJ-epM"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LF1-Cm-mHz">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3b5-HF-IOR" kind="relationship" relationship="rootViewController" id="Lus-87-pDv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30W-B7-GFo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="-994"/>
+        </scene>
+        <!--Hare 1-->
+        <scene sceneID="F1I-j5-GXH">
+            <objects>
+                <viewController storyboardIdentifier="RabitViewController" title="Hare 1" id="3b5-HF-IOR" customClass="HareViewController" customModule="TestNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T1q-yW-epp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHs-Iy-Ih0">
+                                <rect key="frame" x="141.66666666666666" y="405.66666666666669" width="110" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Child"/>
+                                <connections>
+                                    <action selector="showChild" destination="3b5-HF-IOR" eventType="touchUpInside" id="2sh-mX-cEW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5p9-x4-R98"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yHs-Iy-Ih0" firstAttribute="centerY" secondItem="T1q-yW-epp" secondAttribute="centerY" id="Wda-qZ-ZpR"/>
+                            <constraint firstItem="yHs-Iy-Ih0" firstAttribute="centerX" secondItem="T1q-yW-epp" secondAttribute="centerX" id="XTO-Cj-rJx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="HareTitle1" id="Cw6-b6-Agn"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eEt-ub-iPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1947" y="-993"/>
+        </scene>
+        <!--Hare Child1-->
+        <scene sceneID="CJ1-DI-AdF">
+            <objects>
+                <viewController storyboardIdentifier="HareChild" hidesBottomBarWhenPushed="YES" id="tfJ-05-I8g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EF2-v6-O3v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rabit Child" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np0-7H-N46">
+                                <rect key="frame" x="155" y="415.66666666666669" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5FA-xN-epF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Np0-7H-N46" firstAttribute="centerY" secondItem="EF2-v6-O3v" secondAttribute="centerY" id="Bzr-oL-38u"/>
+                            <constraint firstItem="Np0-7H-N46" firstAttribute="centerX" secondItem="EF2-v6-O3v" secondAttribute="centerX" id="jO6-JY-VGc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hare Child1" id="ndo-bJ-ROK"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dv-gJ-rs4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2711" y="-994"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UMb-e7-W5D">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Zjh-qs-zIa" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jl7-tG-96V">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DnE-cu-vhL" kind="relationship" relationship="rootViewController" id="N44-qS-DCZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dEL-pB-vbf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="-573"/>
+        </scene>
+        <!--Home Tab-->
+        <scene sceneID="z5E-IG-7q3">
+            <objects>
+                <tabBarController title="Home Tab" id="DnE-cu-vhL" customClass="TabViewController" customModule="TestNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BOG-AT-hdQ"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I7b-Vd-Mlp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uej-cq-hlc" kind="relationship" relationship="viewControllers" id="WG5-1r-vpk"/>
+                        <segue destination="zUQ-Vc-Hul" kind="relationship" relationship="viewControllers" id="6oa-UN-eET"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rmb-VP-daA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="-572"/>
+        </scene>
+        <!--RabitChild-->
+        <scene sceneID="2dl-hO-D8R">
+            <objects>
+                <viewController storyboardIdentifier="TortoiseChild" title="RabitChild" hidesBottomBarWhenPushed="YES" id="e1n-wL-IsT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qXH-bv-bD3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tortoise Child" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCH-g3-1uV">
+                                <rect key="frame" x="144.33333333333334" y="415.66666666666669" width="104.66666666666666" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AFV-Wf-Bdh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZCH-g3-1uV" firstAttribute="centerY" secondItem="qXH-bv-bD3" secondAttribute="centerY" id="XJG-Gc-cHj"/>
+                            <constraint firstItem="ZCH-g3-1uV" firstAttribute="centerX" secondItem="qXH-bv-bD3" secondAttribute="centerX" id="efO-RK-SrY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tortoise Child1" id="Yvb-Qe-1gG"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bD6-Z0-ORz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2711" y="-189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hare" catalog="system" width="128" height="89"/>
+        <image name="tortoise" catalog="system" width="128" height="65"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
