@@ -50,7 +50,9 @@
                             <constraint firstItem="8xO-lQ-jDt" firstAttribute="centerX" secondItem="3aw-zI-Ocs" secondAttribute="centerX" id="ffj-qC-p8f"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="TortoiseTitle1" id="VEn-g0-dg6"/>
+                    <navigationItem key="navigationItem" title="TortoiseTitle1" id="VEn-g0-dg6">
+                        <barButtonItem key="leftBarButtonItem" title="MainTortoise" id="pa1-Us-PvB"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kvd-hy-hBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,7 +101,9 @@
                             <constraint firstItem="yHs-Iy-Ih0" firstAttribute="centerX" secondItem="T1q-yW-epp" secondAttribute="centerX" id="XTO-Cj-rJx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="HareTitle1" id="Cw6-b6-Agn"/>
+                    <navigationItem key="navigationItem" title="HareTitle1" id="Cw6-b6-Agn">
+                        <barButtonItem key="leftBarButtonItem" title="MainHare" id="AZQ-O1-yc3"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEt-ub-iPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
